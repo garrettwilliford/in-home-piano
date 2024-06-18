@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Home-Experience</title>
+    <link rel="icon" href="objects/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/theme.css"></link>
+    <link rel="stylesheet" href="css/button.css"></link>
+    <link rel="stylesheet" href="css/piano_key.css"></link>
+    <link rel="stylesheet" href="css/experience.css"></link>
+</head>
+<body>
+    <div class="main-container">
+        <div class="overlay-container">
+            <div class="text-container">
+                <a href="main"><button class="back-button" onclick="normalToBase(event)">Back</button></a>
+                <h1>Experience</h1>
+                </br>
+                <div class="card-container">
+                    <div class="card">
+                        <h2>Qualifications</h2>
+                        <p>7+ Years of Experience</p>
+                        <p>Taught 40+ Students</p>
+                        <p>Record of Students Continuing Piano After Instruction</p>
+                        <p>Experience Teaching all Ages, Ranging from 7 up to 73</p>
+                        </br>
+                    </div>
+                    <div class="card">
+                        <h2>What You Get</h2>
+                        <p>Lessons Designed to Foster Continuous Learning</p>
+                        <p>Unique Lessons to Best Suit a Students Needs/Goals</p>
+                        <p>Engaging and Fun Lessons for Children</p>
+                        </br>
+                    </div>
+                    <div class="card">
+                        <h2>What I Want</h2>
+                        <p>Students Walking Away Feeling Successful</p>
+                        <p>Students Practicing in Their Free Time for Fun</p>
+                        <p>Students Showing off to Their Friends</p>
+                        </br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="piano-key-container">
+            <div class="white-keys"></div>
+            <div class="black-keys"></div>
+        </div>
+    </div>
+    <script src="javascript/generate_keys.js"></script>
+    <script src="javascript/end_to_normal.js"></script>
+    <script src="javascript/normal_to_base.js"></script>
+</body>

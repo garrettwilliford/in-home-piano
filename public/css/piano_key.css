@@ -1,0 +1,107 @@
+.piano-key-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.black-keys {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: -37px;
+    gap: 10px;
+    right: 0;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.white-keys {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.piano-key {
+    border-radius: 50px;
+    width: 0px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    align-self: flex-end;
+    margin-right: -5vw;
+}
+
+.piano-key-black {
+    border-radius: 50px;
+    width: 0px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #000000;
+    align-self: flex-end;
+    margin-right: -6vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .piano-key-black {
+        margin-right: -11vw;
+    }
+}
+
+@keyframes base-to-normal {
+    from {
+        width: 0
+    } to {
+        width: var(--end-width, 150px)
+    }
+}
+
+@keyframes normal-to-end {
+    from {
+        width: var(--start-width, 0px);
+    } to {
+        width: 110vw;
+    }
+}
+
+@keyframes normal-to-end-black {
+    from {
+        width: var(--start-width, 0px);
+    } to {
+        width: var(--end-width, 110vw);
+    }
+}
+
+@keyframes end-to-normal {
+    from {
+        width: 110vw;
+    } to {
+        width: var(--end-width, 150px)
+    }
+}
+
+@keyframes end-to-normal-black {
+    from {
+        width: var(--start-width, 150px);
+    } to {
+        width: var(--end-width, 150px)
+    }
+}
+
+@keyframes normal-to-base {
+    from {
+        width: var(--start-width, 150px);
+    } to {
+        width: 0px;
+    }
+}

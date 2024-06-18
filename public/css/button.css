@@ -1,0 +1,41 @@
+.back-button {
+    position: fixed;
+    top: 30px;
+    width: 200px;
+    height: 50px;
+    margin-left: -5vw;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: button-fade-in 2s ease;
+    color: #004aad;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.back-button:hover {
+    background-color: #dbdbdb; 
+}
+
+@media only screen and (max-width: 600px) {
+    .back-button {
+        top: auto;
+        width: 150px;
+        height: 40px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        position: relative;
+        width: 100px;
+    }
+}
+
+@keyframes button-fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

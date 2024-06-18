@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Home-Piano</title>
+    <link rel="icon" href="objects/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/theme.css"></link>
+    <link rel="stylesheet" href="css/piano_key.css"></link>
+    <link rel="stylesheet" href="css/menu.css"></link>
+    <link rel="stylesheet" href="css/main.css"></link>
+</head>
+<body>
+    <div class="main-container">
+        <div class="overlay-container">
+            <div class="text-container">
+                <h1>in-home-piano</h1>
+                <p><em>In Client Home Piano Lessons, Albuquerque NM</em></p>
+                <p>Given By Garrett Williford</p>
+                </br>
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="normalToEnd(event)" href="pricing">Pricing</a></li>
+                        <li><a onclick="normalToEnd(event)" href="contact">Contact</a></li>
+                        <li><a onclick="normalToEnd(event)" href="experience">Experience</a></li>
+                        <li><a onclick="normalToEnd(event)" href="lessons">Lessons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="piano-key-container">
+            <div class="white-keys"></div>
+            <div class="black-keys"></div>
+        </div>
+    </div>
+    <script src="javascript/generate_keys.js"></script>
+    <script src="javascript/base_to_normal.js"></script>
+    <script src="javascript/normal_to_end.js"></script>
+</body>
